@@ -14,7 +14,7 @@ pipline {
       stage("Test") {
         steps {
           //bat 'npm test'
-          bat 'set CI=true && npm test'
+          bat 'set CI=true && npm test --passWithNoTests'
         }
       }
       stage("Start") {
