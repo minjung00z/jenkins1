@@ -15,7 +15,7 @@ node {
   stage('Test') {
       def testsPassed = bat(script: 'set CI=true && npm test -- --passWithNoTests',returnStatus: true)
       if (testsPassed != 0) {
-          error '테스트 실패!
+          error '테스트 실패!'
       }
   }
 
