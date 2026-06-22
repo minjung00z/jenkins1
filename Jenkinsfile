@@ -2,7 +2,7 @@ pipeline {
     agent none
     stages {
         stage("Parallel Build & Test") {
-            Parallel {
+            parallel {
                 stage("Build on Agent1") {
                     agent{ albel 'agent1'}
                     steps {
