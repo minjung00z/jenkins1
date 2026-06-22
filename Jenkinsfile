@@ -1,6 +1,6 @@
 node {
   stage("Checkout") {
-    git url: "https://github.com/minjung00z/jenkins1.git",branch:'main',credentialId:"github-checkout-token"
+    git url: "https://github.com/minjung00z/jenkins1.git",branch:'main',credentialsId:"github-checkout-token"
   }
 
   stage("Build") {
