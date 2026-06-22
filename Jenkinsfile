@@ -28,7 +28,7 @@ pipline {
     }
     post {
       success {
-        echo 'Pipline 성공적으로 완료!'
+        echo 'Pipline 성공적으로 완료!!'
       }
       failure {
         echo 'Pipline 실패!!'
